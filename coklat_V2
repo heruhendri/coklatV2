@@ -23,8 +23,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="1469244768"
-KEY="7219522943:AAFZGZIbRU-CodrmgGJRuyXCV55sJDOSrSg"
+CHATID="958889569"
+KEY="6516463510:AAHCoY6aW7Rz_FdxGaMRyttr78gyMB4ZYgA"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -79,7 +79,7 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
-izinsc="https://github.com/hokagelegend9999/ijin/raw/refs/heads/main/coklatv2"
+izinsc="https://github.com/heruhendri/izin/raw/refs/heads/main/amerikano"
 rm -f /usr/bin/user
 username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
@@ -109,7 +109,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/hokagelegend9999/coklatV2/refs/heads/main/"
+REPO="https://raw.githubusercontent.com/heruhendri/coklatV2/refs/heads/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -255,7 +255,7 @@ echo $nama > /etc/xray/username
 fi
 echo ""
 elif [[ $host == "2" ]]; then
-wget https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/heruhendri/coklat/refs/heads/main/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
@@ -442,7 +442,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service limit Quota"
-wget https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
+wget https://github.com/heruhendri/coklat/raw/refs/heads/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}Fls/limit-ip"
 chmod +x /usr/bin/*
@@ -648,8 +648,8 @@ clear
 function ins_swab(){
 clear
 print_install "Memasang Swap 1 G"
-gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
-gotop_link="https://github.com/xxxserxxx/gotop/releases/download/v$gotop_latest/gotop_v"$gotop_latest"_linux_amd64.deb"
+gotop_latest="$(curl -s https://api.github.com/repos/heruhendri/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
+gotop_link="https://github.com/heruhendri/gotop/releases/download/v$gotop_latest/gotop_v"$gotop_latest"_linux_amd64.deb"
 curl -sL "$gotop_link" -o /tmp/gotop.deb
 dpkg -i /tmp/gotop.deb >/dev/null 2>&1
 dd if=/dev/zero of=/swapfile bs=1024 count=1048576
@@ -682,9 +682,9 @@ print_success "Fail2ban"
 function ins_epro(){
 clear
 print_install "Menginstall ePro WebSocket Proxy"
-wget -O /usr/bin/ws "https://github.com/hokagelegend9999/coklat/raw/refs/heads/main/ws/ws" >/dev/null 2>&1
-wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/ws/tun.conf" >/dev/null 2>&1
-wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/hokagelegend9999/coklat/refs/heads/main/ws/ws.service" >/dev/null 2>&1
+wget -O /usr/bin/ws "https://github.com/heruhendri/coklat/raw/refs/heads/main/ws/ws" >/dev/null 2>&1
+wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/heruhendri/coklat/refs/heads/main/ws/tun.conf" >/dev/null 2>&1
+wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/heruhendri/coklat/refs/heads/main/ws/ws.service" >/dev/null 2>&1
 chmod +x /etc/systemd/system/ws.service
 chmod +x /usr/bin/ws
 chmod 644 /usr/bin/tun.conf
@@ -788,7 +788,7 @@ systemctl start noobzvpns &>/dev/null
 
 echo enable service noobzvpns
 systemctl enable noobzvpns &>/dev/null
-print_success "NOOBZVPNS BY HOKAGE LEGEND"
+print_success "NOOBZVPNS BY HERU HENDRI"
 }
 function ins_restart(){
 clear
@@ -826,7 +826,7 @@ print_success "All Packet"
 function menu(){
 clear
 print_install "Memasang Menu Packet"
-wget https://github.com/hokagelegend9999/coklatV2/raw/refs/heads/main/Cdy/menu.zip
+wget https://github.com/heruhendri/coklatV2/raw/refs/heads/main/Cdy/menu.zip
 unzip menu.zip
 chmod +x menu/*
 mv menu/* /usr/local/sbin

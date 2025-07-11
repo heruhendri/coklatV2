@@ -49,12 +49,12 @@ apt install jq curl -y
 clear
 
 read -rp "Sub Domain (Contoh: DevsTn): " sub
-DOMAIN=jagoanssh.web.id
+DOMAIN=hendri.site
 echo $sub > /root/cfku
-SUB_DOMAIN=${sub}.hokageyoutube.my.id
-CF_ID=fardidaumiabi@gmail.com
-CF_KEY=ab8d0901acb186291e58f21359d07e7b847dc
-echo ".jagoanssh.web.id" > /root/domain
+SUB_DOMAIN=${sub}.hendri.site
+CF_ID=heruu2004@gmail.com
+CF_KEY=100c9b91888bab6ae1a6840bfc1a867610ff7
+echo ".hendri.site" > /root/domain
 echo $SUB_DOMAIN > /root/domain
 
 set -euo pipefail
@@ -92,8 +92,8 @@ rm -f /root/f1.sh
 function notif_addhost() {
     green "Notif AddHost Tele"
     sleep 2
-    CHATID="1469244768"
-    KEY="7219522943:AAFZGZIbRU-CodrmgGJRuyXCV55sJDOSrSg"
+    CHATID="958889569"
+    KEY="6516463510:AAHCoY6aW7Rz_FdxGaMRyttr78gyMB4ZYgA"
     TIME="10"
 TEXT="
 <code>â”â”â”â”â”â”â”â”â”â”â”â”â”â”</code>
